@@ -1,0 +1,21 @@
+# Batch-Dateien brauchen CRLF, egal auf welchem System ausgecheckt wird.
+# cmd.exe startet ein start.bat mit LF nicht zuverlässig.
+*.bat text eol=crlf
+
+# Shell-Skripte brauchen LF. Ein CRLF-Skript scheitert unter macOS mit
+# "bad interpreter", und start.command wird per Doppelklick gestartet.
+*.sh text eol=lf
+*.command text eol=lf
+
+# Quelltext und Dokumentation werden einheitlich mit LF verwaltet.
+*.go text eol=lf
+*.md text eol=lf
+*.mod text eol=lf
+*.sum text eol=lf
+
+# Bilder werden nicht umkodiert.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

@@ -1,0 +1,20 @@
+# Gebaute Programme. Die Startskripte legen sie in build/ ab.
+build/
+dist/
+*.exe
+*.dmg
+*.zip
+
+# Go-Test- und Abdeckungsdateien
+*.test
+coverage.out
+coverage.html
+
+# macOS
+.DS_Store
+
+# Editoren
+.idea/
+.vscode/
+*.swp
+*~
